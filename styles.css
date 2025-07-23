@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url("/fonts/norse-bold-webfont.woff2"),
+        url("/fonts/norse-bold-webfont.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+
+h1 {
+    color: #fff;
+    font: 3.5rem 'norsebold', sans-serif;
+}
+
+h3{
+    color: #3b3b3b;
+}
+
+.banner-section {
+    flex: 1;
+    background: url("/images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    max-width: 400px;
+    position: relative;
+}
+
+.form-section {
+    flex: 1;
+    background-color: #fafbfc;
+}
+
+.logo-container {
+    background: rgb(0 0 0 / 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-top: 130px;
+}
+
+.banner-section span {
+    color: #dadcdd;
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+}
+
+.form-fields{
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #cfcfcf;
+    padding: 10px 0px 30px 30px;
+}
+
+label {
+    display: block;
+    color: #3b3b3b;
+}
+
+.inputs-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 500px;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.right-box{
+    margin-left: 20px;
+}
+
+input{
+    appearance: none;
+    border: 1px solid #E5E7EB;
+    padding: 3px 20px 3px 5px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: 2px solid rgb(0 0 255 / 50%);
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 40%);
+}
+
+.text{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.content{
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.content span:last-child{
+    margin-top: 20px;
+}
+
+.button-container{
+    margin-top: 20px;
+    margin-left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.button-container button{
+    border: none;
+    background-color: #496D48;
+    padding: 8px 30px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s padding;
+}
+
+.button-container button:hover{
+    padding: 10px 32px;
+}
+
+input:focus:invalid{
+    outline: 1px solid red;
+}
