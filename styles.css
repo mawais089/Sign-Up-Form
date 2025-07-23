@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'norsebold';
-    src: url("/fonts/norse-bold-webfont.woff2"),
-        url("/fonts/norse-bold-webfont.woff");
+    src: url("./fonts/norse-bold-webfont.woff2"),
+        url("./fonts/norse-bold-webfont.woff");
 }
 
 * {
@@ -28,7 +28,7 @@ h3{
 
 .banner-section {
     flex: 1;
-    background: url("/images/halie-west-25xggax4bSA-unsplash.jpg");
+    background: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     max-width: 400px;
     position: relative;
